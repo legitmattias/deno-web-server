@@ -1,0 +1,15 @@
+{
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.suggest.imports.hosts": {
+      "https://deno.land": true
+    },
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "javascript.suggestionActions.enabled": false,
+    "typescript.suggestionActions.enabled": false
+  }
+  
