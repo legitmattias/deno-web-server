@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Deno Web Server",
+        "type": "shell",
+        "command": "deno run --allow-net server.ts",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      },
+      {
+        "label": "Run Deno Web Server (Watch Mode)",
+        "type": "shell",
+        "command": "deno run --allow-net --watch server.ts",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Run Deno Tests",
+        "type": "shell",
+        "command": "deno test",
+        "problemMatcher": [],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      },
+      {
+        "label": "Format Code",
+        "type": "shell",
+        "command": "deno fmt",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Run Linter",
+        "type": "shell",
+        "command": "deno lint",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Run Server and Tests",
+        "dependsOn": ["Run Deno Web Server", "Run Deno Tests"],
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      }
+    ]
+  }
+  
