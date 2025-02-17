@@ -1,4 +1,5 @@
-import { Application, Router } from "https://deno.land/x/oak@v12.6.1/mod.ts";
+import { Application, Router } from "./deps.ts";
+
 
 const router = new Router();
 router.get("/", (ctx) => {
